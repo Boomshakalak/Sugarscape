@@ -24,16 +24,24 @@ var sugarMineA = {
     y:          cntY/4,
     initSugar:  maxSugar,
     production: maxProduction, 
-    fallOff:    20};
+    fallOff:    15};
 
 var sugarMineB = {
-    x:          cntX*3/4,
+    x:          cntX*1/2,
     y:          cntY*3/4,
     initSugar:  maxSugar,
     production: maxProduction,
-    fallOff:    20};
+    fallOff:    10};
 
-var sugarMines = [sugarMineA, sugarMineB];
+
+var sugarMineC = {
+    x:          cntX*3/4,
+    y:          cntY*1/4,
+    initSugar:  maxSugar,
+    production: maxProduction,
+    fallOff:    8};
+
+var sugarMines = [sugarMineA, sugarMineB, sugarMineC];
 //--------------------------------------------------------------
 //--------------------------test--------------------------------
 function test_init_sugar_random()

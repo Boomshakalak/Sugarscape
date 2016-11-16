@@ -38,8 +38,8 @@ Agent.prototype.Migrate = function()
 Agent.prototype.Consume = function()
 {
     this.sugar -= this.consume;
-    if (this.sugar <= 0) return false;
-    return true;
+    return this.sugar > 0;
+
 }
 
 Agent.prototype.Harvest = function()
