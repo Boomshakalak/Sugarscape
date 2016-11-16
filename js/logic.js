@@ -9,14 +9,14 @@ var agentCnt        =   250;
 var maxSugar        =   30;
 var maxProduction   =   1;
 var agents          =   new Array(agentCnt);
-var fps             =   3;
+var fps             =   2;
 
 //--------------------------agent constant------------------------
 var visionRange     =   6;
 var harvestRange    =   10;
 var consumeRange    =   8;
-var capacityRange   =   30;
-var initSugarRange  =   15;
+var capacityRange   =   15;
+var initSugarRange  =   10;
 
 //--------------------------sugar mine----------------------------
 var sugarMineA = {
@@ -44,11 +44,7 @@ var sugarMineC = {
 var sugarMines = [sugarMineA, sugarMineB, sugarMineC];
 //--------------------------------------------------------------
 //--------------------------test--------------------------------
-function test_init_sugar_random()
-{
-    for (var i=0; i<cntX*cntY; i++)
-        sugar[i] = Math.floor(Math.random() * maxSugar); 
-}
+
 function test_init_sugar_sugarMine()
 {
     for (var i=0; i<cntX*cntY; i++) {
@@ -70,12 +66,6 @@ function test_init_sugar_sugarMine()
 function test_init_sugar()
 {
     test_init_sugar_sugarMine();         
-}
-
-function test_init_hasAgent()
-{
-    for (var i=0; i<cntX*cntY; i++)
-        hasAgent[i] = false;
 }
 
 function test_init_agent()
@@ -126,10 +116,6 @@ function process_one_frame_agent()
     }
 }
 
-function process_one_frame_sugar()
-{
-   product_sugar();   
-}
 
 function test_draw_grid()
 {
