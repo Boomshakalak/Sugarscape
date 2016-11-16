@@ -39,7 +39,7 @@ Agent.prototype.Consume = function()
 {
     this.sugar -= this.consume;
     if (this.sugar <= 0) return false;
-    else return true;
+    return true;
 }
 
 Agent.prototype.Harvest = function()

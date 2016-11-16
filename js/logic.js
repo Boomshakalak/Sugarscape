@@ -1,14 +1,14 @@
 //-------------------------global definition--------------------
 var cntX            =   50;
 var cntY            =   50;
-var sugar           =   Array(cntX*cntY);
-var sugarProduction =   Array(cntX*cntY);
-var sugarCapacity   =   Array(cntX*cntY);
-var hasAgent        =   Array(cntX*cntY);
+var sugar           =   new Array(cntX*cntY);
+var sugarProduction =   new Array(cntX*cntY);
+var sugarCapacity   =   new Array(cntX*cntY);
+var hasAgent        =   new Array(cntX*cntY);
 var agentCnt        =   250;
 var maxSugar        =   30;
 var maxProduction   =   1;
-var agents          =   Array(agentCnt);
+var agents          =   new Array(agentCnt);
 var fps             =   3;
 
 //--------------------------agent constant------------------------
