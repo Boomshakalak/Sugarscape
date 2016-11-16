@@ -6,8 +6,7 @@ var lineWidth = 1;
 var halfLineWidth = lineWidth/2;
 var halfUnit = unit/2;
 var fullRadius = halfUnit-lineWidth;
-var sugarColor = 'yellow';
-var agentColor = 'blue';
+var agentColor = 'red';
 
 function setCanvas()
 {
@@ -65,8 +64,8 @@ function drawSugarColor(src, max)
         var i = Math.floor(idx / cntX), j = idx % cntX;
         var cx = j*unit+halfUnit, cy = i*unit+halfUnit;
         ctx.clearRect(j*unit, i*unit, unit, unit);
-        var blue = 255-Math.floor(Math.min(max, src[idx])/max*255);
-        var color = 'rgb(255,255,'+blue+')';
+        var color_div = 255-Math.floor(Math.min(max, src[idx])/max*255);
+        var color = 'rgb('+color_div+',255,255)';
         //var color = 'rgb('+blue+',255,255)';
         drawCircle(cx, cy, fullRadius, color);
     }

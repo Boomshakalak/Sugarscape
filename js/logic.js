@@ -27,7 +27,7 @@ var sugarMineA = {
     fallOff:    15};
 
 var sugarMineB = {
-    x:          cntX*1/2,
+    x:          cntX/2,
     y:          cntY*3/4,
     initSugar:  maxSugar,
     production: maxProduction,
@@ -36,7 +36,7 @@ var sugarMineB = {
 
 var sugarMineC = {
     x:          cntX*3/4,
-    y:          cntY*1/4,
+    y:          cntY/4,
     initSugar:  maxSugar,
     production: maxProduction,
     fallOff:    8};
@@ -80,7 +80,7 @@ function test_init_hasAgent()
 
 function test_init_agent()
 {
-    pos_arr = init_postion();
+    pos_arr = init_position();
     for (var i=0; i<agents.length; i++) {
         var pos = pos_arr[i];
         var x = pos%cntX, y = Math.floor(pos/cntX);
@@ -158,12 +158,12 @@ function get_nearest_sugarMine(x, y)
     
 }
 
-function init_postion()
+function init_position()
 {
-    var pos_candidate_arr = Array(cntX*cntY);
+    var pos_candidate_arr = new Array(cntX*cntY);
     for (var i=0; i<cntX*cntY; i++)
         pos_candidate_arr[i] = i;
-    var pos_arr = Array();
+    var pos_arr = [];
     for (var i=0; i<agentCnt; i++) {
         var idx = Math.floor(Math.random()*(cntX*cntY-i));
         pos_arr[i] = pos_candidate_arr[idx];
