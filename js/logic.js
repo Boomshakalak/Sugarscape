@@ -9,8 +9,8 @@ var agentCnt        =   250;
 var maxSugar        =   30;
 var maxProduction   =   1;
 var agents          =   new Array(agentCnt);
-var fps             =   2;
-
+var fps             =   1;
+var sum             =   0;
 //--------------------------agent constant------------------------
 var visionRange     =   6;
 var harvestRange    =   10;
@@ -39,7 +39,7 @@ var sugarMineC = {
     y:          cntY/4,
     initSugar:  maxSugar,
     production: maxProduction,
-    fallOff:    8};
+    fallOff:    6};
 
 var sugarMines = [sugarMineA, sugarMineB, sugarMineC];
 //--------------------------------------------------------------

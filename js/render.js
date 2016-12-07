@@ -49,14 +49,17 @@ function drawSugar()
 
 function drawAgents()
 {
-    //alert('drawAgents');
+    sum=0;
     for (var i=0; i<agents.length; i++) {
+        sum+=agents[i].sugar;
         var x = agents[i].x, y = agents[i].y;
         var cx = x*unit+halfUnit, cy = y*unit+halfUnit;
         var agentColor_div = 255-Math.floor(agents[i].sugar/capacityRange*255);
         var color = 'rgb('+'255,'+agentColor_div+',255';
         drawCircle(cx, cy, fullRadius, color);
     }
+    document.getElementById("sum").innerHTML = sum;
+    document.getElementById("cnt").innerHTML = agents.length;
 }
 
 function draw()
