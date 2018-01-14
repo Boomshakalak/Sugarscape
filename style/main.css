@@ -7,7 +7,7 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-h1.title {
+.title {
     font-size: 60px;
     font-weight: bold;
     margin: 0;
@@ -20,13 +20,21 @@ h1.title {
 }
 
 #sugarScape {
-    margin-top: 100px;
+    margin-top: auto;
     padding-left : 20%;
 }
 
 .description {
     text-align : center;
     letter-spacing: 1px;
+    color : blue;
+}
+
+#agent {
+    color : purple;
+}
+
+#sugar {
     color : blue;
 }
 

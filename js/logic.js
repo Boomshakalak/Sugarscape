@@ -26,22 +26,16 @@ var sugarMineA = {
     production: maxProduction, 
     fallOff:    15};
 
+
+
 var sugarMineB = {
-    x:          cntX/2,
+    x:          cntX*3/4,
     y:          cntY*3/4,
     initSugar:  maxSugar,
     production: maxProduction,
-    fallOff:    10};
+    fallOff:    15};
 
-
-var sugarMineC = {
-    x:          cntX*3/4,
-    y:          cntY/4,
-    initSugar:  maxSugar,
-    production: maxProduction,
-    fallOff:    6};
-
-var sugarMines = [sugarMineA, sugarMineB, sugarMineC];
+var sugarMines = [sugarMineA, sugarMineB];
 //--------------------------------------------------------------
 //--------------------------test--------------------------------
 
