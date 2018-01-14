@@ -1,33 +1,33 @@
 
 html, body {
-  margin: auto;
-  padding: auto;
-  background-color: lightblue;
-  color: #776e65;
-  font-family: Arial, sans-serif;
+    margin: auto;
+    padding: auto;
+    background-color: lightblue;
+    color: #776e65;
+    font-family: Arial, sans-serif;
 }
 
 h1.title {
-  font-size: 60px;
-  font-weight: bold;
-  margin: 0;
-  display: block;
-  float: left; 
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+    text-align : center;
 }
-span
-{
-  position:relative;
-    top:100px;
-  magrin:auto;
-  display:block;
-}
+
 .container {
-  width: 800px;
-  margin: 0 auto;
+    width: 800px;
+    margin: 0 auto;
 }
 
 #sugarScape {
-  margin-top: 100px;
+    margin-top: 100px;
+    padding-left : 20%;
+}
+
+.description {
+    text-align : center;
+    letter-spacing: 1px;
+    color : blue;
 }
 
 

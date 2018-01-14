@@ -45,7 +45,7 @@ var sugarMines = [sugarMineA, sugarMineB, sugarMineC];
 //--------------------------------------------------------------
 //--------------------------test--------------------------------
 
-function test_init_sugar_sugarMine()
+function init_sugar_sugarMine()
 {
     for (var i=0; i<cntX*cntY; i++) {
         var x = i%cntX, y = Math.floor(i/cntX);
@@ -63,12 +63,12 @@ function test_init_sugar_sugarMine()
         }
     }
 }
-function test_init_sugar()
+function init_sugar()
 {
-    test_init_sugar_sugarMine();         
+    init_sugar_sugarMine();
 }
 
-function test_init_agent()
+function init_agent()
 {
     pos_arr = init_position();
     for (var i=0; i<agents.length; i++) {
@@ -117,10 +117,10 @@ function process_one_frame_agent()
 }
 
 
-function test_draw_grid()
+function draw_grid()
 {
-    test_init_sugar();
-    test_init_agent();
+    init_sugar();
+    init_agent();
     drawSugar(sugar, maxSugar);
     drawAgents();  
     process_one_frame();
@@ -166,4 +166,4 @@ function product_sugar()
 //--------------------------------------------------------------
 
 setCanvas();
-test_draw_grid();
+draw_grid();
